@@ -4,14 +4,12 @@ generiert einen rss feed für das iserv aufgabenmodul.
 
 ## benutzeranleitung
 
-* `ISERV_INSTANCE_URL, USERNAME, PASSWORD, THIS_DIRECTORY_PATH` in `scrape.sh` anpassen-
-* `RSSLINKTO, FEEDIMAGEURL, RSSFILE` in `rssmanage.sh` anpassen. sowie `ENCLURL, ENCLLEN, ENCLMIME` in der `insertnewitem()` funktion, damit rss feedreader das enclosure bild richtig anzeigen können.
-
-> `ENCLLEN` ist die content length, kann man vom `Content-Length` Header abschreiben, den mime-type sonst mit 'view image info' in firefox herausfinden.
+* `ISERV_INSTANCE_URL, USERNAME, PASSWORD, THIS_DIRECTORY_PATH` in `scrape.sh` anpassen.
+* `RSSLINKTO, FEEDIMAGEURL, RSSFILE` in `rssmanage.sh` anpassen.
 
 dann:
 1. `rssmanage.sh createfeed` erstellt einen boilerplate rss feed in `$RSSFILE`
-2. `scrape.sh login` ausführen, um die login cookies zu speichern
+2. `scrape.sh login` ausführen, um die login cookies zu speichern (in `.iserv-cookies`)
 3. `scrape.sh fetch`
 4. wahrscheinlich in den `crontab` packen
 
