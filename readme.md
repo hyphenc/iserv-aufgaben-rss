@@ -1,5 +1,7 @@
 # iserv aufgaben rss
 
+:warning: NO LONGER MAINTAINED, da ich keinen zugriff mehr auf eine I-Serv instanz habe.
+
 generiert einen rss feed für das iserv aufgabenmodul.
 
 ## benutzeranleitung
